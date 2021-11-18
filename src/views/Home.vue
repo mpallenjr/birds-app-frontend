@@ -4,7 +4,7 @@
     <div v-for="bird in birds">
    <p> BREED:   {{ bird.breed }} </p>
    <p> LOCATION:   {{ bird.location }} </p>
-   <p> IMAGE:   {{ bird.image }} </p>
+   <p> <img v-bind:src="bird.image_url"> </p>
    <p> DESCRIPTION:   {{ bird.description }} </p>
    </div>
   </div>
