@@ -1,15 +1,23 @@
 <template>
   <div class="home">
     <div v-for="bird in birds">
-      <p> BREED:   {{ bird.breed }} </p>
-      <p> LOCATION:   {{ bird.location }} </p>
-      <p> <img v-bind:src="bird.image_url"> </p>
-      <p> DESCRIPTION:   {{ bird.description }} </p>
+      <div class="card-text-center" style="width: 60rem;">
+        <img v-bind:src="bird.image_url" class="card-img-top" v-bind:alt="bird.description">
+        <div class="card-body">
+          <h5 class="card-title">{{ bird.breed }}</h5>
+          <p class="card-text"> {{ bird.description }} </p>
+          <a href="#" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </template>
 
-<style></style>
+<style>
+
+
+</style>
 
 <script>
 import axios from 'axios';
