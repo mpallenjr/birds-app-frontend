@@ -24,6 +24,7 @@ import axios from 'axios';
         console.log('hello')
         axios.get("http://localhost:3000/birds").then(response => {
           console.log(response.data)
+          this.birds = response.data
         })
       },
     },
