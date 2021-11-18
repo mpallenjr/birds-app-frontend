@@ -1,12 +1,11 @@
 <template>
   <div class="home">
-    <h1>{{ message }}</h1>
     <div v-for="bird in birds">
-   <p> BREED:   {{ bird.breed }} </p>
-   <p> LOCATION:   {{ bird.location }} </p>
-   <p> <img v-bind:src="bird.image_url"> </p>
-   <p> DESCRIPTION:   {{ bird.description }} </p>
-   </div>
+      <p> BREED:   {{ bird.breed }} </p>
+      <p> LOCATION:   {{ bird.location }} </p>
+      <p> <img v-bind:src="bird.image_url"> </p>
+      <p> DESCRIPTION:   {{ bird.description }} </p>
+    </div>
   </div>
 </template>
 
@@ -17,7 +16,6 @@ import axios from 'axios';
   export default {
     data: function () {
       return {
-        message: "Welcome to Vue.js!",
         birds: []
       };
     },
