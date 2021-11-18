@@ -31,6 +31,7 @@ createBirds: function () {
 
 axios.post("http://localhost:3000/birds", this.newBird).then(response => {
 console.log(response.data)
+this.$router.push("/");
 
 })
 }
