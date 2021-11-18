@@ -1,7 +1,12 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-   <p> {{ birds }} </p>
+    <div v-for="bird in birds">
+   <p> BREED:   {{ bird.breed }} </p>
+   <p> LOCATION:   {{ bird.location }} </p>
+   <p> IMAGE:   {{ bird.image }} </p>
+   <p> DESCRIPTION:   {{ bird.description }} </p>
+   </div>
   </div>
 </template>
 
