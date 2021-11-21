@@ -12,14 +12,14 @@
           <a class="nav-link active" aria-current="page" href="/new">Add a Bird</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Log In
+          <a class="nav-link dropdown-toggle" href="/signin" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sign In
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Sign Up</a></li>
-            <li><a class="dropdown-item" href="#">Log In</a></li>
+            <li><a class="dropdown-item" href="/signup">Sign Up</a></li>
+            <li><a class="dropdown-item" href="/signin">Sign In</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Log Out</a></li>
+            <li><a class="dropdown-item" href="#">Sign Out</a></li>
           </ul>
         </li>
       </ul>

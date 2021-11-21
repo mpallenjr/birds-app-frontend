@@ -1,7 +1,7 @@
 <template>
  <div class="input-group input-group-lg">
   <p><span class="input-group-text" id="basic-addon1">Breed</span>
-  <input type="text" class="form-control" placeholder="Breed" aria-label="Username" aria-describedby="basic-addon1" v-model="newBird.breed"></p>
+  <input type="text" class="form-control" placeholder="Breed" aria-label="Username" aria-describedby="basic-addon1" v-model="newBird.breed"> <small v-if="newBird.breed.length > 0 && newBird.breed.length <= 20"> {{20 - newBird.breed.length}} chracters remaining</small></p>
   <p><span class="input-group-text" id="basic-addon1">Location</span>
   <input type="text" class="form-control" placeholder="Location" aria-label="Username" aria-describedby="basic-addon1" v-model="newBird.location"></p>
   <p><span class="input-group-text" id="basic-addon1">Image URL</span>
